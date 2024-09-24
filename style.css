@@ -1,0 +1,108 @@
+/* Reset de estilos básicos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: url('bg-desktop.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0.052); /* Cor de fundo translúcida */
+  padding: 10px 0;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  background-color: rgba(255, 255, 255, 0.052); /* Cor de fundo translúcida */
+  color: white;
+  text-align: center;
+  padding: 7px 0; /* Corrigido de '07 px' para '7px' */
+  font-size: 14px; /* Diminuído o tamanho da fonte */
+}
+
+form {
+  border: 1px solid #9d9c9c;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.712);
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  background-color: rgba(255, 255, 255, 0.07); /* Cor de fundo translúcida */
+}
+
+form input, form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Centralizar o botão de salvar */
+form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.712);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  display: block; /* Adicionado para garantir que o botão seja um bloco */
+  margin: 0 auto; /* Centraliza o botão horizontalmente */
+}
+
+form button:hover {
+  background-color: #5f5b7f;
+}
+
+/* Alinhar labels e mensagens de erro com a mesma cor dos links */
+form label, .form-message {
+  color: white; /* Ajuste conforme necessário para combinar com outros textos */
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+  body {
+    background: url('bg-desktop.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+}
